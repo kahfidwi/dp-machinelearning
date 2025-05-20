@@ -125,8 +125,9 @@ def show_prediction():
     st.sidebar.header("Input Customer Features")
 
     def input_user():
-        Dependents = st.sidebar.radio("Dependents", ["Yes", "No"])
         tenure = st.sidebar.number_input("Tenure (in months)", min_value=1, max_value=72, value=29, step=1)
+        MonthlyCharges = st.sidebar.number_input("MonthlyCharges", min_value=19, max_value=119, value=70, step=1)
+        Dependents = st.sidebar.radio("Dependents", ["Yes", "No"])
         OnlineSecurity = st.sidebar.selectbox("OnlineSecurity", ["Yes", "No", "No internet service"])
         OnlineBackup = st.sidebar.selectbox("OnlineBackup", ["Yes", "No", "No internet service"])
         InternetService = st.sidebar.selectbox("InternetService", ["DSL", "Fiber optic", "No"])
@@ -134,7 +135,7 @@ def show_prediction():
         TechSupport = st.sidebar.selectbox("TechSupport", ["Yes", "No", "No internet service"])
         Contract = st.sidebar.selectbox("Contract", ["Month-to-month", "One year", "Two year"])
         PaperlessBilling = st.sidebar.radio("PaperlessBilling", ["Yes", "No"])
-        MonthlyCharges = st.sidebar.number_input("MonthlyCharges", min_value=19, max_value=119, value=70, step=1)
+        
 
         data = {
             "Dependents": Dependents,
