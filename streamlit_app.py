@@ -126,7 +126,7 @@ def show_prediction():
 
     def input_user():
         tenure = st.sidebar.number_input("Tenure (in months)", min_value=1, max_value=72, value=29, step=1)
-        MonthlyCharges = st.sidebar.number_input("MonthlyCharges", min_value=19, max_value=119, value=25, step=1)
+        MonthlyCharges = st.sidebar.number_input("MonthlyCharges", min_value=1, max_value=119, value=2, step=1)
         Dependents = st.sidebar.radio("Dependents", ["Yes", "No"])
         OnlineSecurity = st.sidebar.selectbox("OnlineSecurity", ["Yes", "No", "No internet service"])
         OnlineBackup = st.sidebar.selectbox("OnlineBackup", ["Yes", "No", "No internet service"])
