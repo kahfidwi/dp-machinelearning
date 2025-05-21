@@ -1,7 +1,5 @@
 # Telco Customer Churn Prediction
-```
-⬆️ (Replace above with your app's name)
-```
+
 
 ## Latar Belakang
 Manajemen Pemasaran sebuah perusahaan telekomunikasi menghadapi tantangan besar terkait tingkat churn pelanggan yang cukup tinggi. Mereka selama ini mengeluarkan biaya promosi ke seluruh pelanggan tanpa tahu siapa yang benar-benar berisiko berhenti menggunakan layanan. Strategi ini tidak efisien, karena sebagian besar promosi justru jatuh kepada pelanggan loyal yang sebenarnya tidak berniat berhenti.
